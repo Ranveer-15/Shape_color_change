@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eaf4f4;
+}
+#wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    width: 35vw;
+    min-height: 60vh;
+    border-radius: 1rem;
+    box-shadow: -1px 1px 17px 7px rgb(44 44 46 / 83%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 100px auto;
+    /* transform: translateX(0 50%); */
+
+}
+
+@media screen and ( max-width: 800px) {
+    .container {
+      width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    .container{
+        width: 90%;
+        
+    }
+  }
+
+#circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+button{
+    background-color: #212121;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    height: 4.5rem;
+    padding: 0 10px 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0px 5px 7px 0px #5c5d5e;
+    translate: 0 -2px;
+}
+
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: rgb(43, 122, 226);
+}
+.purple{
+    background-color: rebeccapurple;
+}
+.pink{
+    background-color: pink;
+}
+.cyan{
+    background-color: cyan;
+}
+.rosybrown{
+    background-color: rosybrown;
+}
+
+#shape{
+    width: 200px;
+    height: 150px;
+    background-color: white;
+}
+
+.star{
+    clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 
+    68% 57%, 79% 91%, 50% 70%, 
+    21% 91%, 32% 57%, 2% 35%, 
+    39% 35%
+  );
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.hexagon{
+    clip-path: polygon(
+    25% 0%, 75% 0%, 100% 50%, 
+    75% 100%, 25% 100%, 0% 50%
+  );
+}
+
+.triangle{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.rigth-arrow{
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+.left-arrow{
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+.rhombus{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.paralallogram{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.left-point{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.right-poit{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.frame{
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+.rebbet{
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+
+}
+
+
